@@ -50,7 +50,11 @@ const AssistanceCard = assistanceList.map((item) => {
             {item.content}
           </Typography>
         </Box>
-        <Box height={1 / 3} p={1} display="flex" justifyContent="flex-end">
+        <Box
+          height={1 / 3}
+          p={1}
+          display="flex"
+          justifyContent="flex-end">
           <Button
             variant="text"
             href="#"

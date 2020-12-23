@@ -72,15 +72,23 @@ const contactItems = contactsList.map((item) => {
                 <img src={location} alt="location" />
               </Box>
               <Box ml={1}>
-                <Typography style={{
-                  textTransform: 'none',
-                }} variant="h6">{item.name}</Typography>
+                <Typography
+                  style={{
+                    textTransform: 'none',
+                  }}
+                  variant="h6">
+                  {item.name}
+                </Typography>
               </Box>
             </Box>
             <Box>
-              <Typography style={{
-                textTransform: 'none',
-              }} variant="subtitle1"> {item.text}</Typography>
+              <Typography
+                style={{
+                  textTransform: 'none',
+                }}
+                variant="subtitle1">
+                {item.text}
+              </Typography>
             </Box>
           </Box>
         </Button>
