@@ -9,35 +9,43 @@ import {
 const assistanceList = [
   {
     id: '1',
-    content: 'Уголовные дела'
+    content: 'Уголовные дела',
+    link: 'assistance/criminal'
   },
   {
     id: '2',
-    content: 'Арбитраж'
+    content: 'Арбитраж',
+    link: 'assistance/arbitraj'
   },
   {
     id: '3',
-    content: 'Гражданские дела'
+    content: 'Гражданские дела',
+    link: 'assistance/civil'
   },
   {
     id: '4',
-    content: 'Консультация'
+    content: 'Консультация',
+    link: 'assistance/consulting'
   },
   {
     id: '5',
-    content: 'Семейные споры'
+    content: 'Семейные споры',
+    link: 'assistance/family'
   },
   {
     id: '6',
-    content: 'Наследство'
+    content: 'Наследство',
+    link: 'assistance/legacy'
   },
   {
     id: '7',
-    content: 'Жилищные споры'
+    content: 'Жилищные споры',
+    link: 'assistance/house'
   },
   {
     id: '8',
-    content: 'Трудовые споры'
+    content: 'Трудовые споры',
+    link: 'assistance/working'
   }
 ]
 
@@ -57,7 +65,7 @@ const AssistanceCard = assistanceList.map((item) => {
           justifyContent="flex-end">
           <Button
             variant="text"
-            href="#"
+            href={item.link}
             size="small"
             color="primary"
           >

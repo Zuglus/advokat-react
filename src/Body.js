@@ -1,11 +1,12 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Box, Grid, makeStyles, Paper } from '@material-ui/core';
 
-import Assistance from './Assistance';
+import AssistanceList from './AssistanceList';
 import Contacts from './Contacts';
 import About from './About';
 import NotFound from './NotFound';
 import Aside from './Aside';
+import AssistancePage from "./AssistancePage";
 
 const useStyles = makeStyles({
   root: {
@@ -21,14 +22,17 @@ const Body = () => {
         <Grid item md={8}>
           <Paper>
             <Switch>
-              <Route path="/assistance">
-                <Assistance />
+              <Route exact path="/assistance">
+                <AssistanceList />
               </Route>
               <Route path="/contacts">
                 <Contacts />
               </Route>
               <Route path="/about">
                 <About />
+              </Route>
+              <Route path="/assistance/:id">
+                <AssistancePage />
               </Route>
               <Route exact path="/">
                 <Redirect to="/assistance" />

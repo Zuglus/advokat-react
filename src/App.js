@@ -14,7 +14,7 @@ const App = () => {
       </BrowserRouter>
       <Box p={1}>
         <Typography align="center">
-          &#169; 2020, Кынтэрец Людмила Николаевна
+          &#169; 2020-2021, Кынтэрец Людмила Николаевна
         </Typography>
       </Box>
     </Container>

@@ -8,6 +8,7 @@ const contactsList = [
     name: "Адрес:",
     text: "198264, город Санкт-Петербург, проспект Ветеранов, дом 171",
     link: "",
+    source: './location.svg',
     gridMD: 12,
     gridSM: 12
   },

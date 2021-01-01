@@ -9,7 +9,7 @@ import AssistanceCard from './AssistanceCard';
 
 
 
-const Assistance = () => {
+const AssistanceList = () => {
   return (
     <Box>
       <Box p={1}>
@@ -30,4 +30,4 @@ const Assistance = () => {
   )
 }
 
-export default Assistance;
+export default AssistanceList;
