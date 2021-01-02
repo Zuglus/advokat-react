@@ -1,39 +1,29 @@
+import { Box, List, ListItem, ListItemText, Typography } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 
-const assistancePages = [
-  {
-    id: 'criminal',
-    head: 'Оказание юридической помощи по уголовным делам',
-    list: [
-      {
-        id: 1,
-        text: 'Ведение уголовного дела на стадии предварительного расследования'
-      },
-      {
-        id: 2,
-        text: 'Ведение уголовного дела на стадии рассмотрения судом первой инстанции'
-      }
-    ]
-  }
-]
+import AssistancePagesData from './AssistancePagesData';
 
-const find = (id) => assistancePages.find(item => item.id === id);
+const find = (id) => AssistancePagesData.find(item => item.id === id);
 
 const AssistancePage = () => {
   let { id } = useParams();
   let page = find(id);
 
   return (
-    <div>
-      <div>{page.head}</div>
-      <ul>
+    <Box>
+      <Typography variant="h5" align="center">{page.header}</Typography>
+      <List>
         {
           page.list.map(item => (
-            <li key={item.id}>{item.text}</li>
+            <ListItem divider={item.divider} >
+              <Box>
+                <ListItemText key={item.id}> {item.text ? item.text : item.subheader}</ListItemText>
+              </Box>
+            </ListItem>
           ))
         }
-      </ul>
-    </div>
+      </List>
+    </Box >
   )
 }
 
