@@ -62,7 +62,8 @@ const AssistanceCard = assistanceList.map((item) => {
           height={1 / 3}
           p={1}
           display="flex"
-          justifyContent="flex-end">
+          justifyContent="flex-end"
+        >
           <Button
             variant="text"
             href={item.link}

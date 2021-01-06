@@ -3,6 +3,14 @@ import { useParams } from 'react-router-dom';
 
 import AssistancePagesData from './AssistancePagesData';
 
+const subheader = (subheader) => {
+  return (
+    <Box mt={3}>
+      <Typography variant="subtitle2" color="textSecondary">{subheader}</Typography>
+    </Box>
+  )
+}
+
 const find = (id) => AssistancePagesData.find(item => item.id === id);
 
 const AssistancePage = () => {
@@ -15,9 +23,9 @@ const AssistancePage = () => {
       <List>
         {
           page.list.map(item => (
-            <ListItem divider={item.divider} >
+            <ListItem key={item.id} divider={(item.notDivider) ? false : true} >
               <Box>
-                <ListItemText key={item.id}> {item.text ? item.text : item.subheader}</ListItemText>
+                <ListItemText> {item.text ? item.text : subheader(item.subheader)}</ListItemText>
               </Box>
             </ListItem>
           ))

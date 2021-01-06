@@ -1,6 +1,7 @@
 import { Box, Typography, Paper, List, ListItem } from '@material-ui/core';
 
-import train from './train.svg';
+import Gallery from './Gallery';
+import Friends from './Friends';
 import externalLink from './externalLink.svg';
 
 const listUsefullLinks = [
@@ -48,7 +49,8 @@ const usefullLinks = listUsefullLinks.map((item) => {
 const Aside = () => {
   return (
     <Box>
-      <img src={train} alt="train" width="100%" />
+      <Friends />
+      <Gallery />
       <Box m={1}>
         <Paper>
           <Typography variant="h6" align="center">Полезные ссылки</Typography>

@@ -27,7 +27,7 @@ const paragraph = contentText.map((item) => {
 
 const About = () => {
   return (
-    <Box mt={1}>
+    <Box>
       <Box p={1}>
         <Typography variant="h5">
           Кынтэрец Людмила Николаевна
