@@ -1,9 +1,9 @@
 import { Box, List, ListItem, ListItemText, Typography } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 
-import AssistancePagesData from './AssistancePagesData';
+import DataAssistancePages from './DataAssistancePages';
 
-const subheader = (subheader) => {
+const subheader = subheader => {
   return (
     <Box mt={3}>
       <Typography variant="subtitle2" color="textSecondary">{subheader}</Typography>
@@ -11,11 +11,11 @@ const subheader = (subheader) => {
   )
 }
 
-const find = (id) => AssistancePagesData.find(item => item.id === id);
+const find = (id) => DataAssistancePages.find(item => item.id === id);
 
 const AssistancePage = () => {
-  let { id } = useParams();
-  let page = find(id);
+  const { id } = useParams();
+  const page = find(id);
 
   return (
     <Box>
@@ -31,7 +31,7 @@ const AssistancePage = () => {
           ))
         }
       </List>
-    </Box >
+    </Box>
   )
 }
 

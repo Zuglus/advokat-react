@@ -7,8 +7,6 @@ import {
 
 import AssistanceCard from './AssistanceCard';
 
-
-
 const AssistanceList = () => {
   return (
     <Box>

@@ -1,5 +1,5 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { Box, Grid, makeStyles, Paper } from '@material-ui/core';
+import { Box, Grid, Paper } from '@material-ui/core';
 
 import AssistanceList from './AssistanceList';
 import Contacts from './Contacts';
@@ -7,12 +7,6 @@ import About from './About';
 import NotFound from './NotFound';
 import Aside from './Aside';
 import AssistancePage from "./AssistancePage";
-
-const useStyles = makeStyles({
-  root: {
-    margin: '0 auto'
-  }
-})
 
 const Body = () => {
   return (
@@ -43,7 +37,7 @@ const Body = () => {
             </Switch>
           </Paper>
         </Grid>
-        <Grid className={useStyles().root} item md={4}>
+        <Grid item md={4}>
           <Aside />
         </Grid>
       </Grid>

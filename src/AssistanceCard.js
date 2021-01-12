@@ -3,57 +3,17 @@ import {
   Box,
   Card,
   Typography,
-  Button
+  Link
 } from '@material-ui/core';
+import { Link as RouterLink } from "react-router-dom";
 
-const assistanceList = [
-  {
-    id: '1',
-    content: 'Уголовные дела',
-    link: 'assistance/criminal'
-  },
-  {
-    id: '2',
-    content: 'Арбитраж',
-    link: 'assistance/arbitraj'
-  },
-  {
-    id: '3',
-    content: 'Гражданские дела',
-    link: 'assistance/civil'
-  },
-  {
-    id: '4',
-    content: 'Консультация',
-    link: 'assistance/consulting'
-  },
-  {
-    id: '5',
-    content: 'Семейные споры',
-    link: 'assistance/family'
-  },
-  {
-    id: '6',
-    content: 'Наследство',
-    link: 'assistance/legacy'
-  },
-  {
-    id: '7',
-    content: 'Жилищные споры',
-    link: 'assistance/house'
-  },
-  {
-    id: '8',
-    content: 'Трудовые споры',
-    link: 'assistance/working'
-  }
-]
+import DataAssistanceList from './DataAssistanceList';
 
-const AssistanceCard = assistanceList.map((item) => {
+const AssistanceCard = DataAssistanceList.map((item) => {
   return (
     <Grid item xs={6} sm={4} key={item.id}>
-      <Card style={{ height: "100%" }}>
-        <Box height={2 / 3} p={1}>
+      <Card>
+        <Box bgcolor="primary.main" height={60} p={1} color="white">
           <Typography variant="h6" align="center">
             {item.content}
           </Typography>
@@ -63,15 +23,18 @@ const AssistanceCard = assistanceList.map((item) => {
           p={1}
           display="flex"
           justifyContent="flex-end"
+          color="white"
+          bgcolor="primary.main"
         >
-          <Button
-            variant="text"
-            href={item.link}
-            size="small"
-            color="primary"
+          <Link
+            component={RouterLink}
+            to={item.link}
+            color="inherit"
+            variant="subtitle1"
+            underline="none"
           >
             Подробнее &gt;&gt;
-          </Button>
+          </Link>
         </Box>
       </Card>
     </Grid >
