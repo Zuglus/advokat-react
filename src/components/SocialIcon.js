@@ -1,11 +1,11 @@
-import location from './location.svg';
-import email from './email.svg';
-import phone from './phone.svg';
-import telegram from './telegram.svg';
-import whatsapp from './whatsapp.svg';
-import viber from './viber.svg';
-import facebook from './facebook.svg';
-import instagram from './instagram.svg';
+import location from '../images/location.svg';
+import email from '../images/email.svg';
+import phone from '../images/phone.svg';
+import telegram from '../images/telegram.svg';
+import whatsapp from '../images/whatsapp.svg';
+import viber from '../images/viber.svg';
+import facebook from '../images/facebook.svg';
+import instagram from '../images/instagram.svg';
 
 const images = [
   {

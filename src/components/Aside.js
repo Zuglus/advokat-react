@@ -2,8 +2,8 @@ import { Box, Typography, Paper, List, ListItem } from '@material-ui/core';
 
 import Gallery from './Gallery';
 import Friends from './Friends';
-import externalLink from './externalLink.svg';
-import DataUsefullLinksList from './DataUsefullLinksList';
+import externalLink from '../images/externalLink.svg';
+import DataUsefullLinksList from '../data/DataUsefullLinksList';
 
 const Aside = () => {
   return (

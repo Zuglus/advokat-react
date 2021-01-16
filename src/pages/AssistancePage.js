@@ -1,7 +1,7 @@
 import { Box, List, ListItem, ListItemText, Typography } from '@material-ui/core';
 import { useParams } from 'react-router-dom';
 
-import DataAssistancePages from './DataAssistancePages';
+import DataAssistancePages from '../data/DataAssistancePages';
 
 const subheader = subheader => {
   return (

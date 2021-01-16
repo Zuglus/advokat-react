@@ -5,7 +5,7 @@ import {
   Grid,
 } from '@material-ui/core';
 
-import AssistanceCard from './AssistanceCard';
+import AssistanceCard from '../components/AssistanceCard';
 
 const AssistanceList = () => {
   return (

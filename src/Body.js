@@ -2,11 +2,11 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Box, Grid, Paper } from '@material-ui/core';
 
 import AssistanceList from './AssistanceList';
-import Contacts from './Contacts';
+import Contacts from './pages/Contacts';
 import About from './About';
-import NotFound from './NotFound';
+import NotFound from './pages/NotFound';
 import Aside from './Aside';
-import AssistancePage from "./AssistancePage";
+import AssistancePage from "./pages/AssistancePage";
 
 const Body = () => {
   return (

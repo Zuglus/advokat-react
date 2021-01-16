@@ -7,7 +7,7 @@ import {
 } from '@material-ui/core';
 import { Link as RouterLink } from "react-router-dom";
 
-import DataAssistanceList from './DataAssistanceList';
+import DataAssistanceList from '../data/DataAssistanceList';
 
 const AssistanceCard = DataAssistanceList.map((item) => {
   return (

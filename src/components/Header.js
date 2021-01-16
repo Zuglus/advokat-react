@@ -1,6 +1,6 @@
 import { Box, AppBar, Toolbar, Button } from '@material-ui/core';
 
-import logo from './logo.svg';
+import logo from '../images/logo.svg';
 import Nav from './Nav';
 import HeaderContacts from './HeaderContacts';
 

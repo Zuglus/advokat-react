@@ -1,6 +1,6 @@
 import { Box } from "@material-ui/core"
 
-import image from "./train.jpg";
+import image from "../images/train.jpg";
 
 const Gallery = () => {
   return (

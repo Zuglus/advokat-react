@@ -1,7 +1,7 @@
 import { Box, Button, Typography, Grid } from '@material-ui/core';
 
-import DataContactsList from './DataContactList';
-import SocialIcon from './SocialIcon';
+import DataContactsList from '../data/DataContactList';
+import SocialIcon from '../components/SocialIcon';
 
 const contactItems = DataContactsList.map((item) => {
   return (
