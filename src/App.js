@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Box, Container, Typography } from '@material-ui/core';
 
 import Header from './components/Header';
-import Body from './Body';
+import Body from './components/Body';
 
 const App = () => (
   <Container disableGutters maxWidth="md">
