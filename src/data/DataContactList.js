@@ -66,8 +66,8 @@ const DataContactsList = [
   {
     id: 8,
     name: "Instagram:",
-    text: "liudmila_kynteretc",
-    link: "https://www.instagram.com/liudmila_kynteretc/?igshid=1jibm9nk87p5z",
+    text: "advokat_kynteretc",
+    link: "https://instagram.com/advokat_kynteretc?igshid=1fetv0o6i8m6k",
     icon: 'instagram',
     gridMD: 4,
     gridSM: 6

@@ -49,10 +49,10 @@ const Contacts = () => {
         <Typography align="justify">Адвокат, учредивший адвокатский кабинет, Кынтэрец Л.Н.</Typography>
       </Box>
       <Box p={1}>
-        <Typography align="justify">Регистрационный номер</Typography>
+        <Typography align="justify">Регистрационный номер 78/7944 в реестре адвокатов Санкт-Петербурга</Typography>
       </Box>
       <Box p={1}>
-        <Typography align="justify">Удостоверение</Typography>
+        <Typography align="justify">Удостоверение 10256, выдано Главным управлением Министерства юстиции Российской Федерации по Санкт-Петербургу</Typography>
       </Box>
       <Grid container>
         {contactItems}
