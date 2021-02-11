@@ -23,6 +23,7 @@ const Nav = () => {
             label={item.name}
             to={item.page}
             value={item.page}
+            key={item.name}
           />
         )
       })}
