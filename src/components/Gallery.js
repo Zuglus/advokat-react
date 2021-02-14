@@ -4,7 +4,7 @@ import image from "../images/train.jpg";
 
 const Gallery = () => {
   return (
-    <Box ml={1}>
+    <Box ml={{ xs: 0, md: 1 }}>
       <img src={image} alt="Train" width="100%" />
     </Box>
   )

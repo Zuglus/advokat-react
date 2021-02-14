@@ -2,7 +2,7 @@ import { Box, Paper, Typography, Button } from '@material-ui/core';
 
 const Friends = () => {
   return (
-    <Box ml={1} mb={1}>
+    <Box mb={1} ml={{ xs: 0, md: 1 }} mt={{ xs: 1, md: 0 }}>
       <Paper>
         <Typography variant="h6" align="center">Друзья</Typography>
         <Box color="red" align="center" pb={1}>

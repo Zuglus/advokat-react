@@ -14,7 +14,7 @@ const Body = () => {
     <Box mt={2}>
       <Grid container>
         <Grid item md={8}>
-          <Paper>
+          <Paper style={{ height: '100%' }}>
             <Switch>
               <Route exact path="/assistance">
                 <AssistanceList />
@@ -37,7 +37,7 @@ const Body = () => {
             </Switch>
           </Paper>
         </Grid>
-        <Grid item md={4}>
+        <Grid item sm={12} md={4}>
           <Aside />
         </Grid>
       </Grid>

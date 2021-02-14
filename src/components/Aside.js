@@ -10,7 +10,7 @@ const Aside = () => {
     <Box>
       <Friends />
       <Gallery />
-      <Box m={1}>
+      <Box mt={1} ml={{ xs: 0, md: 1 }}>
         <Paper>
           <Typography variant="h6" align="center">Полезные ссылки</Typography>
           <List>

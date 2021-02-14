@@ -2,7 +2,7 @@ const DataContactsList = [
   {
     id: 1,
     name: "Адрес:",
-    text: "198264, город Санкт-Петербург, проспект Ветеранов, дом 171",
+    text: "198264, город Санкт-Петербург",
     link: "",
     icon: 'location',
     gridMD: 12,

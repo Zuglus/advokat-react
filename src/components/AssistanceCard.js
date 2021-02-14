@@ -1,9 +1,8 @@
 import {
   Grid,
   Box,
-  Card,
   Typography,
-  Link
+  Link,
 } from '@material-ui/core';
 import { Link as RouterLink } from "react-router-dom";
 
@@ -11,8 +10,18 @@ import DataAssistanceList from '../data/DataAssistanceList';
 
 const AssistanceCard = DataAssistanceList.map((item) => {
   return (
-    <Grid item xs={6} sm={4} key={item.id}>
-      <Card>
+    <Grid
+      item xs={6}
+      sm={4}
+      key={item.id}
+    >
+      <Link
+        component={RouterLink}
+        to={item.link}
+        color="inherit"
+        variant="subtitle1"
+        underline="none"
+      >
         <Box bgcolor="primary.main" height={60} p={1} color="white">
           <Typography variant="h6" align="center">
             {item.content}
@@ -26,18 +35,10 @@ const AssistanceCard = DataAssistanceList.map((item) => {
           color="white"
           bgcolor="primary.main"
         >
-          <Link
-            component={RouterLink}
-            to={item.link}
-            color="inherit"
-            variant="subtitle1"
-            underline="none"
-          >
-            Подробнее &gt;&gt;
-          </Link>
+          Подробнее &gt;&gt;
         </Box>
-      </Card>
-    </Grid >
+      </Link>
+    </Grid>
   )
 })
 
