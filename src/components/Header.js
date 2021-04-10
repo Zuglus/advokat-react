@@ -10,9 +10,12 @@ const Header = () => {
       <AppBar position="relative">
         <Toolbar disableGutters>
           <Box>
-            <Button href="/">
-              <img style={{ width: '100%' }} src={logo} alt="Logo" />
-            </Button>
+            <Box display="flex" color="white">
+              <Button href="/">
+                <img style={{ width: '100%' }} src={logo} alt="Logo" />
+              </Button>
+              <Button color="inherit" variant="outlined">En</Button>
+            </Box>
             <Nav />
           </Box>
           <Box display={{ xs: 'none', sm: 'flex' }} width={1 / 3} p={1} justifyContent="flex-end">

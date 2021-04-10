@@ -2,8 +2,9 @@ const DataContactsList = [
   {
     id: 1,
     name: "Адрес:",
-    text: "198264, город Санкт-Петербург",
-    link: "",
+    text: '191144, город Санкт-Петербург, 5-я Советская улица, д. 44 офис 5,',
+    text2: 'Деловой центр "Суворовский"',
+    link: "https://yandex.ru/maps/?pt=30.375633,59.932739&z=18&l=map",
     icon: 'location',
     gridMD: 12,
     gridSM: 12,

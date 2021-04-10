@@ -7,6 +7,8 @@ import viber from '../images/viber.svg';
 import facebook from '../images/facebook.svg';
 import instagram from '../images/instagram.svg';
 
+import { Box } from '@material-ui/core';
+
 const images = [
   {
     name: 'location',
@@ -43,12 +45,16 @@ const images = [
 ]
 
 const SocialIcon = ({ iconName }) => {
-  const finding = images.find(item => item.name === iconName)
-  return (
-    <div>
-      <img src={finding.img} width="35px" alt={iconName} />
-    </div>
-  )
+  if (iconName) {
+    const finding = images.find(item => item.name === iconName)
+    return (
+      <Box mr={1}>
+        <img src={finding.img} width="35px" alt={iconName} />
+      </Box>
+    )
+  } else {
+    return false
+  }
 }
 
 export default SocialIcon;
