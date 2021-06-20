@@ -14,7 +14,7 @@ const Header = () => {
               <Button href="/">
                 <img style={{ width: '100%' }} src={logo} alt="Logo" />
               </Button>
-              <Button color="inherit" variant="outlined">En</Button>
+              {/* <Button color="inherit" variant="outlined">En</Button> */}
             </Box>
             <Nav />
           </Box>
