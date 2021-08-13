@@ -51,18 +51,6 @@ const ContactsData = {
   ],
   buttons: [
     {
-      id: 1,
-      name: "Адрес:",
-      text: '191144, город Санкт-Петербург, 5-я Советская улица, д. 44 офис 5,',
-      text2: 'Деловой центр "Суворовский"',
-      href: "https://yandex.ru/maps/?pt=30.375633,59.932739&z=18&l=map",
-      icon: 'location',
-      gridMD: 12,
-      gridSM: 12,
-      gridXS: 12,
-      srcImg: './location.svg'
-    },
-    {
       id: 2,
       name: "Телефон:",
       text: "+7 (911) 985-50-36",
