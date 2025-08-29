@@ -1,4 +1,4 @@
-import { Box, AppBar, Toolbar, Button } from '@material-ui/core';
+import { Box, AppBar, Toolbar, Button } from '@mui/material';
 
 import logo from '../images/logo.svg';
 import Nav from './Nav';

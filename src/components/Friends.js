@@ -1,4 +1,4 @@
-import { Box, Paper, Typography, Button } from '@material-ui/core';
+import { Box, Paper, Typography, Button } from '@mui/material';
 
 const Friends = () => {
   return (

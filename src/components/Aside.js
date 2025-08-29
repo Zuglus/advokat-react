@@ -1,4 +1,4 @@
-import { Box, Typography, Paper, List, ListItem } from '@material-ui/core';
+import { Box, Typography, Paper, List, ListItem } from '@mui/material';
 
 import Gallery from './Gallery';
 import Friends from './Friends';

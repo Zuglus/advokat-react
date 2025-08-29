@@ -1,7 +1,7 @@
 import React from 'react';
 import TablePriceHeader from './TablePriceHeader';
 import TablePriceBody from './TablePriceBody';
-import { Table, TableBody } from '@material-ui/core';
+import { Table, TableBody } from '@mui/material';
 
 export default class TablePrice extends React.Component {
   render() {

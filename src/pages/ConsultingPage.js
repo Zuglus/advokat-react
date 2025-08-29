@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 import BlockOfText from '../components/BlockOfText';
 import AlertText from '../components/AlertText';
 import TablePrice from '../components/TablePrice';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Grid, Typography } from '@material-ui/core';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import { Link as RouterLink } from "react-router-dom";
 
 import SocialIcon from './SocialIcon';
