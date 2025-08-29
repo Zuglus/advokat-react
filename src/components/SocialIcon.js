@@ -7,7 +7,7 @@ import viber from '../images/viber.svg';
 import facebook from '../images/facebook.svg';
 import instagram from '../images/instagram.svg';
 
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 
 const images = [
   {

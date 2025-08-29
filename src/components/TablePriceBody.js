@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, TableCell, TableRow } from "@material-ui/core"
+import { Box, TableCell, TableRow } from "@mui/material"
 
 export default class TablePriceBody extends React.Component {
   render() {

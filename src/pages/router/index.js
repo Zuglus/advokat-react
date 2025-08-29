@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import AssistancePage from '../AssistancePage';
 import ContactsPage from '../ContactsPage';
@@ -18,47 +18,21 @@ import TaxPage from '../TaxPage';
 export default class Router extends React.Component {
   render() {
     return (
-      <Switch>
-        <Route exact path='/assistance'>
-          <AssistancePage />
-        </Route>
-        <Route path='/contacts'>
-          <ContactsPage />
-        </Route>
-        <Route path='/about'>
-          <AboutPage />
-        </Route>
-        <Route path='/assistance/criminal'>
-          <CriminalPage />
-        </Route>
-        <Route path='/assistance/arbitraj'>
-          <ArbitrajPage />
-        </Route>
-        <Route path='/assistance/consulting'>
-          <ConsultingPage />
-        </Route>
-        <Route path='/assistance/civil'>
-          <CivilPage />
-        </Route>
-        <Route path='/assistance/family'>
-          <FamilyPage />
-        </Route>
-        <Route path='/assistance/legacy'>
-          <LegacyPage />
-        </Route>
-        <Route path='/assistance/house'>
-          <HousePage />
-        </Route>
-        <Route path='/assistance/tax'>
-          <TaxPage />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/assistance" />
-        </Route>
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path='/assistance' element={<AssistancePage />} />
+        <Route path='/contacts' element={<ContactsPage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/assistance/criminal' element={<CriminalPage />} />
+        <Route path='/assistance/arbitraj' element={<ArbitrajPage />} />
+        <Route path='/assistance/consulting' element={<ConsultingPage />} />
+        <Route path='/assistance/civil' element={<CivilPage />} />
+        <Route path='/assistance/family' element={<FamilyPage />} />
+        <Route path='/assistance/legacy' element={<LegacyPage />} />
+        <Route path='/assistance/house' element={<HousePage />} />
+        <Route path='/assistance/tax' element={<TaxPage />} />
+        <Route path="/" element={<Navigate to="/assistance" />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     )
   }
 }

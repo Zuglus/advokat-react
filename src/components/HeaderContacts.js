@@ -1,4 +1,4 @@
-import { Box, Link, Button } from "@material-ui/core";
+import { Box, Link, Button } from "@mui/material";
 
 import DataContactList from '../data/DataContactList';
 import SocialIcon from './SocialIcon';

@@ -1,4 +1,4 @@
-import { TableCell, TableHead, TableRow } from "@material-ui/core";
+import { TableCell, TableHead, TableRow } from "@mui/material";
 
 const TablePriceHeader = () => {
   return (

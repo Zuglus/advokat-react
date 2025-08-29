@@ -1,4 +1,4 @@
-import { Box, Grid, Paper } from '@material-ui/core';
+import { Box, Grid, Paper } from '@mui/material';
 
 import Router from '../pages/router';
 import Aside from './Aside';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link } from '@material-ui/core';
+import { Box, Typography, Link } from '@mui/material';
 
 export default class BlockOfText extends React.Component {
   render() {
