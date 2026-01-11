@@ -16,7 +16,7 @@ const HeaderContacts = () => {
           DataHeaderIconList.map(item => {
             const headerContact = dataContact(item)
             return (
-              <Button href={headerContact.link} minWidth="61">
+              <Button key={item} href={headerContact.link} sx={{ minWidth: 61 }}>
                 <SocialIcon iconName={headerContact.icon} />
               </Button>
             )
@@ -29,7 +29,7 @@ const HeaderContacts = () => {
             color="white"
             fontSize="1.15rem"
             fontWeight="700"
-            minWidth="50"
+            sx={{ minWidth: 50 }}
           >
             {phone.text}
           </Box>

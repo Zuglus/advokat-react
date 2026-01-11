@@ -22,7 +22,7 @@ const AssistanceData = {
       id: '1',
       name: 'Уголовные дела',
       component: 'RouterLink',
-      link: 'assistance/criminal',
+      link: '/assistance/criminal',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -31,7 +31,7 @@ const AssistanceData = {
       id: '2',
       name: 'Арбитраж',
       component: 'RouterLink',
-      link: 'assistance/arbitraj',
+      link: '/assistance/arbitraj',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -40,7 +40,7 @@ const AssistanceData = {
       id: '3',
       name: 'Консультация',
       component: 'RouterLink',
-      link: 'assistance/consulting',
+      link: '/assistance/consulting',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -49,7 +49,7 @@ const AssistanceData = {
       id: '4',
       name: 'Гражданские дела',
       component: 'RouterLink',
-      link: 'assistance/civil',
+      link: '/assistance/civil',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -58,7 +58,7 @@ const AssistanceData = {
       id: '5',
       name: 'Семейные споры',
       component: 'RouterLink',
-      link: 'assistance/family',
+      link: '/assistance/family',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -67,7 +67,7 @@ const AssistanceData = {
       id: '6',
       name: 'Наследство',
       component: 'RouterLink',
-      link: 'assistance/legacy',
+      link: '/assistance/legacy',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -76,7 +76,7 @@ const AssistanceData = {
       id: '7',
       name: 'Жилищные споры',
       component: 'RouterLink',
-      link: 'assistance/house',
+      link: '/assistance/house',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
@@ -85,7 +85,7 @@ const AssistanceData = {
       id: '8',
       name: 'Налоговые споры',
       component: 'RouterLink',
-      link: 'assistance/tax',
+      link: '/assistance/tax',
       color: 'primary',
       gridXS: 6,
       gridSM: 4
