@@ -9,7 +9,7 @@ export default class GridOfButtons extends React.Component {
   render() {
     return (
       <Box m={2}>
-        <Grid container justify="center" spacing={1}>
+        <Grid container justifyContent="center" spacing={1}>
           {this.props.buttons.map((item) => {
             return (
               <Grid
